@@ -1,3 +1,4 @@
+
 // Import packages
 const { response } = require('express');
 const express = require('express');
@@ -19,15 +20,14 @@ app.listen(port,()=>{
 })
 // GET/
 app.get('/',(req,response)=>{
-    // what is the media type
-    response.type('text/html')
-
-    //set the status code
     response.status(200)
 
     // send the responses
-    response.send(`<h1>The current time is ${new Date()}</h1> now`)
+    
+    response.send(`<h1>The current time is ${new Date()}</h1><img src="/static/IMG_0235.JPG"> `)
 })
 
-console.info(`port = ${port}`)
+//Serve static resource
+app.use("/static",express.static(__dirname+"/static"))
 
+console.info(`port = ${port}`)
