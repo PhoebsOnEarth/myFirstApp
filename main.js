@@ -24,7 +24,7 @@ app.get('/',(req,response)=>{
 
     // send the responses
     
-    response.send(`<h1>The current time is ${new Date()}</h1><br><img src="/static/IMG_0235.JPG"><br>
+    response.send(`<h1>The current time is ${new Date()}</h1><br><img src="/static/IMG_0235.JPG"><br><p>Hi pals!</p>
     <img src="/static/IMG_001.jpg">`)
 })
 
