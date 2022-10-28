@@ -26,11 +26,11 @@ app.get('/',(req,response)=>{
     response.status(200)
 
     // send the responses
-    response.send(`<h1>The current time is ${new Date()}</h1><img src="/static/IMG_0235.JPG"> `)
+    response.send(`<h1>The current time is ${new Date()}</h1> `)
 })
 
 //Serve static resource
-app.use("/static",express.static(__dirname+"/static"))
+
 
 console.info(`port = ${port}`)
 
