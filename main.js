@@ -25,7 +25,7 @@ app.get('/',(req,response)=>{
     // send the responses
     
     response.send(`<h1>The current time is ${new Date()}</h1><br><img src="/static/IMG_0235.JPG"><br>
-    <img src="/static/IMG_001.jpg`)
+    <img src="/static/IMG_001.jpg">`)
 })
 
 //Serve static resource
